@@ -1,0 +1,23 @@
+.list-group{
+    position: fixed;
+    top: 90px;
+    left: 40px;
+}
+  
+@media screen and (max-width: 1070px) {
+    .list-group {
+        width: 100%;
+        left: 0px;
+        top: 0%;
+        position: relative;
+    }
+}
+
+.card-header{
+    text-align: center;
+}
+
+.wrapper{
+    padding-bottom: 90px;
+}
+  

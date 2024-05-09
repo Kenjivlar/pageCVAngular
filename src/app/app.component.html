@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
+  <div class="container">
+    <a class="nav-link active navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active" [ngClass]="{active: menuOption == 'home'}" (click)="onOption('home')">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/experience']" routerLinkActive="router-link-active" [ngClass]="{active: menuOption == 'experience'}" (click)="onOption('experience')">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/education']" routerLinkActive="router-link-active" [ngClass]="{active: menuOption == 'education'}" (click)="onOption('education')">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/objectives']" routerLinkActive="router-link-active" [ngClass]="{active: menuOption == 'objectives'}" (click)="onOption('objectives')">Objectives</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/skills']" routerLinkActive="router-link-active" [ngClass]="{active: menuOption == 'skills'}" (click)="onOption('skills')">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/courses']" routerLinkActive="router-link-active" [ngClass]="{active: menuOption == 'courses'}" (click)="onOption('courses')">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/hobbies']" routerLinkActive="router-link-active">Hobbies</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+  <router-outlet />
+
+
+<footer class="footer">
+  <p>Web Page Developed by Kevin A. M. &copy; {{pt | date: 'yyyy'}}</p>
+</footer>

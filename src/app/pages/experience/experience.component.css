@@ -13,11 +13,58 @@
     }
 }
 
+@media screen and (max-width: 770px) {
+    #imgc{
+        display: flex;
+        justify-content: center;
+    }
+
+    .tim{
+        text-align: center;
+    }
+
+    #desc{
+        text-align: right;
+    }
+}
+
+.imgs{
+    width:156px;
+    height:90px;
+    float: right;
+}
+
+.imgso{
+    width:121px;
+    height:121px;
+    float: right;
+}
+
+.imgsa{
+    width:93px;
+    height:93px;
+    float: right;
+}
+
+.imgsat{
+    width:113px;
+    height:93px;
+    float: right;
+}
+
 .card-header{
     text-align: center;
 }
 
 .wrapper{
     padding-bottom: 90px;
+}
+
+.tim{
+
+}
+
+#desc{
+
 }
   

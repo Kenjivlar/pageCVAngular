@@ -1,3 +1,15 @@
+.container{
+    padding-bottom: 90px;
+}
+
+
+
+.imga{
+    width:116px;
+    height:116px;
+    float: right;
+}
+
 .list-group{
     position: fixed;
     top: 90px;
@@ -10,6 +22,21 @@
         left: 0px;
         top: 0%;
         position: relative;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #imgc{
+        display: flex;
+        justify-content: center;
+    }
+
+    #tite{
+        text-align: center;
+    }
+
+    .yer{
+        text-align: right;
     }
 }
 

@@ -7,6 +7,7 @@ import { HobbiesComponent } from './pages/hobbies/hobbies.component';
 import { ObjectivesComponent } from './pages/objectives/objectives.component';
 import { VgComponent } from './pages/vg/vg.component';
 import { SkillsComponent } from './pages/skills/skills.component';
+import { ImageSliderComponent } from './pages/image-slider/image-slider.component';
 
 
 export const routes: Routes = [
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path: 'education', component: EducationComponent},
     {path: 'experience', component: ExperienceComponent},
     {path: 'hobbies', component: HobbiesComponent},
+    {path: 'images', component: ImageSliderComponent},
     {path: 'objectives', component: ObjectivesComponent},
     {path: 'skills', component: SkillsComponent},
     {path: 'vg', component: VgComponent},

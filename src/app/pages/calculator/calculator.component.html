@@ -1,0 +1,100 @@
+<h1 style="text-align: center;" class="m-5">Calculator</h1>
+<button (click)="resu()">Resultado</button>
+<input type="text"  value="{{number1}}">
+<input type="text"  value="{{number2}}">
+<div class="container">
+    <div class="row">
+        <div>
+                <input type="text" value="{{numInN}}">
+        </div>
+        
+        <br>
+
+        <div>
+            <div class="number">
+              <button (click)="nOne()">1</button>
+            </div>
+          
+            <div class="number">
+              <button (click)="nTwo()">2</button>
+            </div>
+          
+            <div class="number">
+              <button (click)="nThree()">3</button>
+            </div>
+
+            <div class="number">
+                <button>/</button>
+            </div>
+
+            <div class="number">
+                <button (click)="del()" class="icon"></button>
+            </div>
+
+        <div>
+        
+        <div>
+          <div class="number">
+            <button (click)="nFour()">4</button>
+          </div>
+      
+          <div class="number">
+            <button (click)="nFive()">5</button>
+          </div>
+      
+          <div class="number">
+            <button (click)="nSix()">6</button>
+          </div>
+
+          <div class="number">
+            <button>x</button>
+          </div>
+
+          <div class="number">
+            <button (click)="cE()">CE</button>
+          </div>
+        </div>
+
+        <div>
+            <div class="number">
+              <button (click)="nSeven()">7</button>
+            </div>
+              
+            <div class="number">
+              <button (click)="nEight()">8</button>
+            </div>
+        
+            <div class="number">
+              <button (click)="nNine()">9</button>
+            </div>
+
+            <div class="number">
+                <button>-</button>
+            </div>
+
+            <div class="number">
+                <button>%</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="number">
+              <button (click)="nZero()">0</button>
+            </div>
+
+            <div class="number">
+                <button (click)="nDot()">.</button>
+            </div>
+
+            <div class="number">
+                <button class="equals" (click)="result()">=</button>
+            </div>
+
+            <div class="number">
+                <button class="sum" (click)="sum()">+</button>
+            </div>
+        </div>
+
+    </div> 
+    
+</div>

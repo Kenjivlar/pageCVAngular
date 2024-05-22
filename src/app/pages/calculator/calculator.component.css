@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding-bottom: 90px;
+}
+
+.row{
+    display: block;
+}
+
+.number{
+    display: inline-block;
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+    text-align: end;
+}
+
+.sum{
+    width: 130px;
+    border-radius: 10%;
+
+}
+
+.icon{
+    padding-bottom: 22px;
+    border-radius: 25%;
+    background: url(../../../assets/img/left.svg) no-repeat;
+    border-color: black;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    border-color: #0000ff;
+    background-color: aliceblue;
+}
+
+.equals{
+    border-color: red;
+    background-color: aquamarine;
+}

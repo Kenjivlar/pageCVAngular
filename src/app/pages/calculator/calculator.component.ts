@@ -26,6 +26,10 @@ export class CalculatorComponent {
   number2: number;
   number3: number;
   add: boolean;
+  dec: boolean;
+  mul: boolean;
+  di: boolean;
+  mod: boolean;
 
   constructor(){
     this.numIn = [];
@@ -45,6 +49,10 @@ export class CalculatorComponent {
     this.number2 = 0;
     this.number3 = 0;
     this.add = false;
+    this.dec = false;
+    this.mul = false;
+    this.di = false;
+    this.mod =false;
   }
 
   nZero(){
@@ -135,6 +143,9 @@ export class CalculatorComponent {
   }
 
   cE(){
+    this.number1 = 0;
+    this.number2 = 0;
+    this.number3 = 0;
     this.numIn = [];
     this.numInN = this.numIn.toString();
     this.numInN = this.numInN.replaceAll(',', '');
@@ -144,18 +155,107 @@ export class CalculatorComponent {
     this.numInN = this.numIn.toString();
     this.numInN = this.numInN.replaceAll(',', '');
     this.number1 = Number(this.numInN);
-    this.cE();
+    this.number2 = this.number2 + this.number1;
+    this.number1 = 0;
+    this.numInN = String(this.number2);
+    this.numIn = Array.from(this.numInN);
+    this.numIn = [];
     console.log(this.number1)
     this.add = true;
+    this.dec = false;
+    this.mul = false;
+    this.di = false;
+    this.mod = false;
+  }
+
+  min(){
+    this.numInN = this.numIn.toString();
+    this.numInN = this.numInN.replaceAll(',', '');
+    this.number1 = Number(this.numInN);
+    this.number2 = this.number1 - this.number2;
+    this.number1 = 0;
+    this.numInN = String(this.number2);
+    this.numIn = Array.from(this.numInN);
+    this.numIn = [];
+    console.log(this.number1)
+    this.dec = true;
+    this.add = false;
+    this.mul = false;
+    this.di = false;
+    this.mod = false;
+  }
+
+  multi(){
+    this.numInN = this.numIn.toString();
+    this.numInN = this.numInN.replaceAll(',', '');
+    this.number1 = Number(this.numInN);
+    this.numIn = [];
+    console.log(this.number1)
+    this.mul = true;
+    this.dec = false;
+    this.add = false;
+    this.di = false;
+    this.mod = false;
+  }
+
+  divi(){
+    this.numInN = this.numIn.toString();
+    this.numInN = this.numInN.replaceAll(',', '');
+    this.number1 = Number(this.numInN);
+    this.numIn = [];
+    console.log(this.number1)
+    this.di = true;
+    this.mul = false;
+    this.dec = false;
+    this.add = false;
+    this.mod = false;
+  }
+
+
+  modu(){
+    this.numInN = this.numIn.toString();
+    this.numInN = this.numInN.replaceAll(',', '');
+    this.number1 = Number(this.numInN);
+    this.numIn = [];
+    console.log(this.number1)
+    this.mod = true;
+    this.mul = false;
+    this.dec = false;
+    this.add = false;
+    this.di = false;
   }
 
   result(){
-    this.number2 = Number(this.numInN);
     if(this.add){
-      this.number3 = this.number1 + this.number2;
+      this.number1 = Number(this.numInN);
+      this.number3 = this.number2 + this.number1;
       this.numInN = String(this.number3);
-      this.numIn = Array.from(this.numInN);
     }
+
+    if(this.dec){
+      this.number1 = Number(this.numInN);
+      this.number3 = this.number2 - this.number1;
+      this.numInN = String(this.number3);
+    }
+
+    if(this.mul){
+      this.number2 = Number(this.numInN);
+      this.number3 = this.number2 * this.number1;
+      this.numInN = String(this.number3);
+    }
+
+    if(this.di){
+      this.number2 = Number(this.numInN);
+      this.number3 = this.number2 / this.number1;
+      this.numInN = String(this.number3);
+    }
+
+    if(this.mod){
+      this.number2 = Number(this.numInN);
+      this.number3 = (this.number2 % this.number1);
+      this.numInN = String(this.number3);
+    }
+      
   }
   
 

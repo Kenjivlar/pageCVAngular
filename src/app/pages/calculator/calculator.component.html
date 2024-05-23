@@ -1,11 +1,10 @@
 <h1 style="text-align: center;" class="m-5">Calculator</h1>
-<button (click)="resu()">Resultado</button>
-<input type="text"  value="{{number1}}">
-<input type="text"  value="{{number2}}">
+<!--<input type="text"  value="{{number1}}">
+<input type="text"  value="{{number2}}">-->
 <div class="container">
     <div class="row">
         <div>
-                <input type="text" value="{{numInN}}">
+                <input type="text" value="{{numInN}}" readonly>
         </div>
         
         <br>
@@ -24,7 +23,7 @@
             </div>
 
             <div class="number">
-                <button>/</button>
+                <button (click)="divi()">/</button>
             </div>
 
             <div class="number">
@@ -47,7 +46,7 @@
           </div>
 
           <div class="number">
-            <button>x</button>
+            <button (click)="multi()">x</button>
           </div>
 
           <div class="number">
@@ -69,11 +68,11 @@
             </div>
 
             <div class="number">
-                <button>-</button>
+                <button (click)="min()">-</button>
             </div>
 
             <div class="number">
-                <button>%</button>
+                <button (click)="modu()">%</button>
             </div>
         </div>
 

@@ -10,11 +10,13 @@
 }
 
 .imgg3{
-    width:366px;
-    height:290px;
+    width:221px;
+    height:221px;
 }
 
 .col-md-4.middle{
+    display: flex;
+    justify-content: center;
     padding-top: 30px;
 }
 

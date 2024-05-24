@@ -1,0 +1,29 @@
+.buttonl{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  top: 9%;
+  margin-top: -25px;
+  left: 5%;
+}
+
+.buttonr{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 9%;
+    margin-top: -25px;
+    right: 5%;
+}
+
+#iconl{
+
+    background: url(../../../assets/img/lefta.png) no-repeat;
+
+}
+
+#iconr{
+
+    background: url(../../../assets/img/righta.png) no-repeat;
+
+}

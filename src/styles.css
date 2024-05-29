@@ -2,3 +2,66 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: 'Gloria' ;
+    src: url('assets/fonts/Gloria\ Hallelujah/GloriaHallelujah-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArquitectsDaughter' ;
+    src: url('assets/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Audiowide' ;
+    src: url('assets/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Handle' ;
+    src: url('assets/fonts/Handle/Handlee-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Istok' ;
+    src: url('assets/fonts/Istok_Web/IstokWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JuliusSans' ;
+    src: url('assets/fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nanum' ;
+    src: url('assets/fonts/Nanum_Pen_Script/NanumPenScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Play' ;
+    src: url('assets/fonts/Play/Play-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayB' ;
+    src: url('assets/fonts/Play/Play-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

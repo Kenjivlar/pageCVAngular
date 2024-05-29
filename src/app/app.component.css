@@ -1,3 +1,7 @@
+#play{
+	font-family: 'Play';
+}
+
 .nav{
     background-color: #e3f2fd;
 }
@@ -31,6 +35,6 @@
 	  top: 0%;
 	  position: relative;
 	}
-  }
+}
   
  

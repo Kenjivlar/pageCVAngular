@@ -190,6 +190,13 @@ export class CalculatorComponent {
     this.numInN = this.numInN.replaceAll(',', '');
     this.number1 = Number(this.numInN);
     this.numIn = [];
+    this.number2 = this.number2 * this.number1
+    if(this.number2 == 0){
+      this.number2 = this.number1;
+    }
+    this.numInN = String(this.number2);
+    this.numIn = Array.from(this.numInN);
+    this.numIn = [];
     console.log(this.number1)
     this.mul = true;
     this.dec = false;
@@ -239,20 +246,20 @@ export class CalculatorComponent {
     }
 
     if(this.mul){
-      this.number2 = Number(this.numInN);
+      this.number1 = Number(this.numInN);
       this.number3 = this.number2 * this.number1;
       this.numInN = String(this.number3);
     }
 
     if(this.di){
       this.number2 = Number(this.numInN);
-      this.number3 = this.number2 / this.number1;
+      this.number3 = this.number1 / this.number2;
       this.numInN = String(this.number3);
     }
 
     if(this.mod){
       this.number2 = Number(this.numInN);
-      this.number3 = (this.number2 % this.number1);
+      this.number3 = (this.number1 % this.number2);
       this.numInN = String(this.number3);
     }
       

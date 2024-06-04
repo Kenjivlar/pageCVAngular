@@ -7,7 +7,24 @@
     position: fixed;
     top: 90px;
     left: 40px;
+
+    animation: shadows 3s infinite;
 }
+
+@keyframes shadows {
+    0% {
+      box-shadow: 0px 0px 20px 10px white;
+    }
+    50% {
+      box-shadow: 0px 0px 20px 1px #48abe0;
+    }
+    75% {
+      box-shadow: 0px 0px 20px 1px #48abe0;
+    }
+    100% {
+      box-shadow: 0px 0px 20px 10px white;
+    }
+  }
   
 @media screen and (max-width: 1070px) {
     .list-group {

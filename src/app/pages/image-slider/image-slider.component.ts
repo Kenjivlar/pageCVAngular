@@ -42,7 +42,7 @@ export class ImageSliderComponent {
 
   saveNumber(){
     this.number1 = Number((<HTMLInputElement>document.getElementById("n2")).value);
-    this.number3 = this.number1 % this.number2;
+    this.number3 = this.number1 + this.number2;
   }
 
   nFur(){

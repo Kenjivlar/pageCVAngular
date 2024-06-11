@@ -1,3 +1,37 @@
 .content-wrap{
     padding-bottom: 90px;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.list-group-item.udemy{
+    border-color: #A435F0;
+}
+
+.list-group-item.udemy:hover{
+    background-color: #A435F0;
+    color: white;
+}
+
+.list-group-item.youtube{
+    border-left-color: #FF0000;
+    border-right-color: #FF0000;
+}
+
+.list-group-item.youtube.t{
+    border-top-color: #FF0000;
+}
+
+.list-group-item.youtube.b{
+    border-bottom-color: #FF0000;
+}
+
+.list-group-item.youtube:hover{
+    background-color: #FF0000;
+    a{
+        color: white;
+    }
+}

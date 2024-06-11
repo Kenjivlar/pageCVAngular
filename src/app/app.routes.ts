@@ -9,15 +9,19 @@ import { VgComponent } from './pages/vg/vg.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ImageSliderComponent } from './pages/image-slider/image-slider.component';
 import { CalculatorComponent } from './pages/calculator/calculator.component';
+import { AppsGamesComponent } from './pages/apps-games/apps-games.component';
+import { GuessNumberComponent } from './pages/guess-number/guess-number.component';
 
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
+    {path: 'apps-games', component: AppsGamesComponent},
     {path: 'home', component: HomeComponent},
     {path: 'calculator', component: CalculatorComponent},
     {path: 'courses', component: CoursesComponent},
     {path: 'education', component: EducationComponent},
     {path: 'experience', component: ExperienceComponent},
+    {path: 'guess-game', component: GuessNumberComponent},
     {path: 'hobbies', component: HobbiesComponent},
     {path: 'images', component: ImageSliderComponent},
     {path: 'objectives', component: ObjectivesComponent},

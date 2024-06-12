@@ -1,3 +1,102 @@
-h1, h2{
+h1,h2{
     text-align: center;
+}
+span{
+    font-size: small;
+}
+.wrapper{
+    padding-bottom: 90px;
+}
+
+.title{
+    left: 50%;
+    
+    transform: translate(-50%);
+
+    color: #80FF00;
+}
+
+.title.mg{
+    color: #80FF00;
+    background-color: black;
+    max-width: 20%;
+}
+
+.title.po{
+    color: #80FF00;
+    background-color: black;
+    max-width: 10%;
+}
+.slides{
+    width: 500px;
+    height: 450px;
+    left: 50%;  
+    transform: translate(-50%); 
+    overflow: hidden;
+    position: relative;
+    border: 4px solid #80FF00;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    inset: 0;
+    animation: slide-show 65s infinite;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide-1{
+    animation-delay: 5s;
+}
+.slide-2{
+    animation-delay: 10s;
+}
+.slide-3{
+    animation-delay: 15s;
+}
+.slide-4{
+    animation-delay: 20s;
+}
+.slide-5{
+    animation-delay: 25s;
+}
+.slide-6{
+    animation-delay: 30s;
+}
+.slide-7{
+    animation-delay: 35s;
+}
+.slide-8{
+    animation-delay: 41s;
+}
+.slide-9{
+    animation-delay: 46s;
+}
+.slide-10{
+    animation-delay: 51s;
+}
+
+
+@keyframes slide-show{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%,30%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }

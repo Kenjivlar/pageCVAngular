@@ -2,3 +2,33 @@ h1{
     text-align: center;
     padding-top: 25px;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+
+.row{
+    display: block;
+    padding: 40px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 8px 12px;
+    background-color: #00eb08;
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+p {
+    text-align: center;
+}

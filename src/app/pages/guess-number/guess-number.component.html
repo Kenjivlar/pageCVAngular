@@ -1,1 +1,15 @@
 <h1>Guess The Number</h1>
+
+<div class="container">
+    <div class="row">
+        <p>Type a number between 1 and 100</p>
+        <input type="number" id="typedNumber">
+        &nbsp;
+        <button id="but" (click)="checkResult()">Check</button>
+        
+    </div>
+</div>
+
+<p id="message">{{mResult}}</p>
+
+<p>{{fCount}}</p> 

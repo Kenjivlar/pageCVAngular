@@ -16,7 +16,7 @@ export class GuessNumberComponent {
 
   constructor() {
     this.typedN = 0;
-    this.mResult = 'Let´s play!!!';
+    this.mResult = 'Let\'s play!!!';
     this.countt = 0;
   }
   checkResult(){

@@ -1,0 +1,20 @@
+<h1 style="text-align: center;" class="m-5">Weather Aplication</h1>
+
+<div class="container">
+    <div>
+        <div>
+            <input type="text" class="city" id="cityT" placeholder="Type a City">
+    
+            <button (click)="fetchDatosClima()">Search</button>
+        </div>
+    
+        <div class="weatherData" *ngIf="flag">
+            <h3>{{cityN}}, {{cityC}}</h3>
+            <p>{{cityT}}° C</p>
+            <p>{{cityH}}% Humidity</p>
+            <p>{{cityD}}</p>
+            <img src="https://openweathermap.org/img/wn/{{cityI}}@2x.png" alt="">
+        </div>
+    </div>
+    
+</div>

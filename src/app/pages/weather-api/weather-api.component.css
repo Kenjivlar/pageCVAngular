@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+input{
+    border-radius: 20px;
+    border-color: aqua;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    border-radius: 10px;
+    background-color: rgb(92, 203, 255);
+    border-color: aquamarine;
+}
+
+button:hover{
+    opacity: 0.50;
+}
+
+
+
+.row{
+    align-items: center;
+    margin-left: 15px;
+}
+
+.city{
+    margin-right: 10px;
+}
+
+.weatherData{
+    margin-top: 20px;    
+}
+
+.weatherData h3, p{
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+    background-color: rgb(96, 96, 255);
+    display: block;
+    margin: auto;
+}

@@ -11,6 +11,7 @@ import { ImageSliderComponent } from './pages/image-slider/image-slider.componen
 import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { AppsGamesComponent } from './pages/apps-games/apps-games.component';
 import { GuessNumberComponent } from './pages/guess-number/guess-number.component';
+import { WeatherApiComponent } from './pages/weather-api/weather-api.component';
 
 
 export const routes: Routes = [
@@ -27,5 +28,6 @@ export const routes: Routes = [
     {path: 'objectives', component: ObjectivesComponent},
     {path: 'skills', component: SkillsComponent},
     {path: 'vg', component: VgComponent},
+    {path: 'weather', component: WeatherApiComponent},
     {path: '**', redirectTo: '', pathMatch: 'full'}
 ];

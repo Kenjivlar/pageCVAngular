@@ -10,10 +10,10 @@ import {CommonModule} from '@angular/common';
 })
 export class WeatherApiComponent {
   urlBase = 'https://api.openweathermap.org/data/2.5/weather'
-  api_key = '224844ef25af01a73d4cca01ef74d9ff'
   difKelvin = 273.15
   
   city: string;
+  api_key: string;
 
   cityN: string;
   cityC: string;
@@ -26,6 +26,7 @@ export class WeatherApiComponent {
 
   constructor(){
     this.city = ''
+    this.api_key = ''
     this.cityN = ''
     this.cityC = ''
     this.cityH = ''
@@ -35,14 +36,13 @@ export class WeatherApiComponent {
     // this.cityT = ''
   }
 
-  getCity(){
-    this.city = (<HTMLInputElement>document.getElementById('cityT')).value;
-  }
+
 
   
   fetchDatosClima(){
       this.flag = true
       this.city = (<HTMLInputElement>document.getElementById('cityT')).value;
+      this.api_key = (<HTMLInputElement>document.getElementById('akey')).value;
       fetch(`${this.urlBase}?q=${this.city}&appid=${this.api_key}`)
       .then(response => response.json())
       .then(response => {

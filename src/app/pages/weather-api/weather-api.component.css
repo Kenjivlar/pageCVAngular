@@ -48,3 +48,30 @@ img{
     display: block;
     margin: auto;
 }
+
+.pkey{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.textak{
+    text-align: center;
+}
+
+#akey{
+    margin-left: 34%;
+}
+
+@media screen and (max-width: 770px){
+    #akey{
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    #akey{
+        margin-left: 35%;
+    }
+}

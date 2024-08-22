@@ -1,10 +1,12 @@
 h1,h2{
     text-align: center;
+    padding-top: 10px;
 }
 span{
     font-size: small;
 }
 .wrapper{
+    padding-top: 10px;
     padding-bottom: 90px;
 }
 
@@ -29,7 +31,7 @@ span{
 }
 .slides{
     width: 500px;
-    height: 450px;
+    height: 370px;
     left: 50%;  
     transform: translate(-50%); 
     overflow: hidden;
@@ -99,4 +101,21 @@ span{
     50%{
         opacity: 0;
     }
+}
+
+
+@media screen and (max-width: 990px) {
+    h1{
+        padding-top: 30px;
+    }
+
+    .wrapper{
+        padding-top: 70px;
+    }
+
+    .slides{
+        width: 300px;
+        height: 270px;
+    }
+
 }

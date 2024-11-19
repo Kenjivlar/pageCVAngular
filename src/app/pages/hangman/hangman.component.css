@@ -44,8 +44,8 @@ button:hover{
 #cbpb, #vcb, #mhb{
     width: auto;
     height: auto;
-    border-radius: 40px 10px;
-    /* border-radius: 2em; */
+    /* border-radius: 40px 10px; */
+    border-radius: 2em;
 }
 
 .wordht{
@@ -84,10 +84,10 @@ button:hover{
 
 @media screen and (max-width: 770px){
     h1{
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     .container{
-        padding-top: 50px;
+        padding-top: 30px;
     }
 }

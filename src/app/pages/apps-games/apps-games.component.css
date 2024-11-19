@@ -35,10 +35,24 @@
 	margin-bottom: 10px;
 }
 
+.hang{
+	float: left;
+	margin-left: -113px;
+	margin-top: 100px;
+}
+
+.test2{
+	float: right;
+	margin-left: -113px;
+	margin-right: -63px;
+	margin-top: 150px;
+}
+
+
 
 @media screen and (max-width: 990px) {
 
-.calc, .guess, .weather, .videog{
+.calc, .guess, .weather, .videog, .hang, .test2{
 
 	float: none;
 	margin-top: unset;

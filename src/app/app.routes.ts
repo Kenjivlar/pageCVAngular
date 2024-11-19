@@ -12,6 +12,7 @@ import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { AppsGamesComponent } from './pages/apps-games/apps-games.component';
 import { GuessNumberComponent } from './pages/guess-number/guess-number.component';
 import { WeatherApiComponent } from './pages/weather-api/weather-api.component';
+import { HangmanComponent } from './pages/hangman/hangman.component';
 
 
 export const routes: Routes = [
@@ -29,5 +30,6 @@ export const routes: Routes = [
     {path: 'skills', component: SkillsComponent},
     {path: 'vg', component: VgComponent},
     {path: 'weather', component: WeatherApiComponent},
+    {path: 'hangman', component: HangmanComponent},
     {path: '**', redirectTo: '', pathMatch: 'full'}
 ];

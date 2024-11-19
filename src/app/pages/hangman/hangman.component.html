@@ -1,0 +1,80 @@
+<h1>Hangman</h1>
+
+<!-- <p>{{heroes[1]}}</p> -->
+<!-- <p>{{sizeA}}</p> -->
+<!-- <p>{{numberRandom}}</p> -->
+<!-- <p>{{heroes[numberRandom]}}</p> -->
+
+<!-- <p>Selected: {{selectedString}}</p> -->
+
+<!-- <p>Size of the word: {{sizeS}}</p> -->
+<!-- <p>{{wordE}}</p> -->
+<!-- <p>{{numE}}</p> -->
+<!-- <input type="text" id="typedL"> -->
+
+<!-- <p>{{wordC}}</p>
+<p>{{wordCf}}</p>
+<p>{{wordFt}}</p> -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="bcategory">
+            <button (click)="change('mH')" id="mhb">Marvel Heroes</button>
+            <button (click)="change('vC')" id="vcb">Videogame Characters</button>
+            <button (click)="change('cBp')" id="cbpb">Car Body Parts</button>
+        </div>
+        <div class="wordht">
+            <h3>{{category}}</h3>
+        </div>
+        <div class="wordh">
+            <h2>{{word}}</h2>
+            <h6>Attempts Left: {{maxAttempts}} <span id="wR">{{wordResult}}</span></h6>
+        </div>
+        <div>
+            
+        </div>
+        <!-- <button (click)="checkV()">Check Variables</button> -->
+    <div class="line">
+        <button (click)="checking(letterQ)" id="lbuttonQ">{{letterQ}}</button>
+        <button (click)="checking(letterE)" id="lbuttonE">{{letterE}}</button>
+        <button (click)="checking(letterW)" id="lbuttonW">{{letterW}}</button>
+        <button (click)="checking(letterR)" id="lbuttonR">{{letterR}}</button>
+        <button (click)="checking(letterT)" id="lbuttonT">{{letterT}}</button>
+        <button (click)="checking(letterY)" id="lbuttonY">{{letterY}}</button>
+        <button (click)="checking(letterU)" id="lbuttonU">{{letterU}}</button>
+        <button (click)="checking(letterI)" id="lbuttonI">{{letterI}}</button>
+        <button (click)="checking(letterO)" id="lbuttonO">{{letterO}}</button>
+        <button (click)="checking(letterP)" id="lbuttonP">{{letterP}}</button>  
+    </div>
+
+    <div class="line">
+        <button (click)="checking(letterA)" id="lbuttonA">{{letterA}}</button>
+        <button (click)="checking(letterS)" id="lbuttonS">{{letterS}}</button>
+        <button (click)="checking(letterD)" id="lbuttonD">{{letterD}}</button>
+        <button (click)="checking(letterF)" id="lbuttonF">{{letterF}}</button>
+        <button (click)="checking(letterG)" id="lbuttonG">{{letterG}}</button>
+        <button (click)="checking(letterH)" id="lbuttonH">{{letterH}}</button>
+        <button (click)="checking(letterJ)" id="lbuttonJ">{{letterJ}}</button>
+        <button (click)="checking(letterK)" id="lbuttonK">{{letterK}}</button>
+        <button (click)="checking(letterL)" id="lbuttonL">{{letterL}}</button>
+    </div>
+
+    <div class="line">
+        <button (click)="mayusB()" class="bmayus" id="lbuttonMs">Bloq Mayus</button>
+        <button (click)="checking(letterZ)" id="lbuttonZ">{{letterZ}}</button>
+        <button (click)="checking(letterX)" id="lbuttonX">{{letterX}}</button>
+        <button (click)="checking(letterC)" id="lbuttonC">{{letterC}}</button>
+        <button (click)="checking(letterV)" id="lbuttonV">{{letterV}}</button>
+        <button (click)="checking(letterB)" id="lbuttonB">{{letterB}}</button>
+        <button (click)="checking(letterN)" id="lbuttonN">{{letterN}}</button>
+        <button (click)="checking(letterM)" id="lbuttonM">{{letterM}}</button>
+    </div>
+
+    <div class="resetb">
+        <button (click)="reset()" class="rst">Reset</button>
+        <button (click)="another()" class="rst">Another Word</button>
+    </div>
+    </div>
+</div>
+

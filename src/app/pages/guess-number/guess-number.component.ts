@@ -38,6 +38,8 @@ export class GuessNumberComponent {
       this.mResult = 'The number is less, try again';
       (<HTMLInputElement>document.getElementById("message")).style.color = 'red';
     }
+
+    (<HTMLInputElement>document.getElementById("typedNumber")).value = "";
   }
   
 }

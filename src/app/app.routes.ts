@@ -13,6 +13,7 @@ import { AppsGamesComponent } from './pages/apps-games/apps-games.component';
 import { GuessNumberComponent } from './pages/guess-number/guess-number.component';
 import { WeatherApiComponent } from './pages/weather-api/weather-api.component';
 import { HangmanComponent } from './pages/hangman/hangman.component';
+import { RockpaperscissorsComponent } from './pages/rockpaperscissors/rockpaperscissors.component';
 
 
 export const routes: Routes = [
@@ -31,5 +32,6 @@ export const routes: Routes = [
     {path: 'vg', component: VgComponent},
     {path: 'weather', component: WeatherApiComponent},
     {path: 'hangman', component: HangmanComponent},
+    {path: 'rockpaperscissors', component: RockpaperscissorsComponent},
     {path: '**', redirectTo: '', pathMatch: 'full'}
 ];

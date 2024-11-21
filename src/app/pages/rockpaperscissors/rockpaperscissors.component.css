@@ -1,0 +1,52 @@
+.ir{
+    width: 100px;
+    height: 100px;
+}
+
+.ip{
+    width: 100px;
+    height: 100px;
+}
+
+.is{
+    width: 100px;
+    height: 100px;
+}
+
+.imgsrps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+img{
+    margin: 10px;
+}
+
+.result, .iresult, .resetb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result{
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.iresult{
+    padding-top: 20px;
+}
+
+.resetb{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button{
+    background-color: rgb(93, 191, 230);
+    border-color: rgb(233, 81, 78);
+    font: bold;
+    border-radius: 2em;
+}

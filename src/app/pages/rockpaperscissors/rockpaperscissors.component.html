@@ -1,0 +1,32 @@
+<h1 style="text-align: center;" class="m-4">Rock Paper Scissors Game</h1>
+
+<div class="container">
+    <div class="row">
+
+        <div class="iresult" *ngIf="this.selectedRps == 'rock'">
+            <img src="../../../assets/img/rock.png" alt="" class="ir">
+        </div>
+        <div class="iresult" *ngIf="this.selectedRps == 'paper'">
+            <img src="../../../assets/img/paper.png" alt="" class="ir">
+        </div>
+        <div class="iresult" *ngIf="this.selectedRps == 'scissors'">
+            <img src="../../../assets/img/scissors.png" alt="" class="ir">
+        </div>
+
+        <div class="imgsrps">
+            <img src="../../../assets/img/rock.png" alt="" class="ir" (click)="play(ropasc[0])">
+            <img src="../../../assets/img/paper.png" alt="" class="ip" (click)="play(ropasc[1])">
+            <img src="../../../assets/img/scissors.png" alt="" class="is" (click)="play(ropasc[2])">
+        </div>
+
+        <div class="result">
+            <p>{{result}}</p>
+        </div>
+
+        <div *ngIf="flag" class="resetb">
+            <button (click)="reset()">Reset</button>
+        </div>
+
+        
+    </div>
+</div>
